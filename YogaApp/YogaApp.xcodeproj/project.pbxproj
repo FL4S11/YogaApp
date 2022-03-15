@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F24474E27E0BC7600009ED6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24474D27E0BC7600009ED6 /* AppDelegate.swift */; };
+		3F24475027E0BC7600009ED6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24474F27E0BC7600009ED6 /* SceneDelegate.swift */; };
+		3F24475227E0BC7600009ED6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24475127E0BC7600009ED6 /* ViewController.swift */; };
+		3F24475527E0BC7600009ED6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F24475327E0BC7600009ED6 /* Main.storyboard */; };
+		3F24475727E0BC7800009ED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F24475627E0BC7800009ED6 /* Assets.xcassets */; };
+		3F24475A27E0BC7800009ED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F24475827E0BC7800009ED6 /* LaunchScreen.storyboard */; };
+		3F24475F27E0BC7800009ED6 /* YogaApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3F24475E27E0BC7800009ED6 /* YogaApp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3F24476527E0BC7800009ED6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F24476327E0BC7800009ED6 /* Interface.storyboard */; };
+		3F24476727E0BC7900009ED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F24476627E0BC7900009ED6 /* Assets.xcassets */; };
+		3F24476D27E0BC7900009ED6 /* YogaApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3F24476C27E0BC7900009ED6 /* YogaApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3F24477227E0BC7900009ED6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24477127E0BC7900009ED6 /* InterfaceController.swift */; };
+		3F24477427E0BC7900009ED6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24477327E0BC7900009ED6 /* ExtensionDelegate.swift */; };
+		3F24477627E0BC7900009ED6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24477527E0BC7900009ED6 /* NotificationController.swift */; };
+		3F24477827E0BC7900009ED6 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24477727E0BC7900009ED6 /* ComplicationController.swift */; };
+		3F24477A27E0BC7A00009ED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F24477927E0BC7A00009ED6 /* Assets.xcassets */; };
+		3F24478B27E0C14C00009ED6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24478A27E0C14C00009ED6 /* TableViewController.swift */; };
+		3F24478D27E0C37400009ED6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F24478C27E0C37400009ED6 /* TableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F24476027E0BC7800009ED6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F24474227E0BC7600009ED6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F24475D27E0BC7800009ED6;
+			remoteInfo = "YogaApp WatchKit App";
+		};
+		3F24476E27E0BC7900009ED6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F24474227E0BC7600009ED6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F24476B27E0BC7900009ED6;
+			remoteInfo = "YogaApp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3F24478227E0BC7A00009ED6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3F24476D27E0BC7900009ED6 /* YogaApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F24478627E0BC7A00009ED6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3F24475F27E0BC7800009ED6 /* YogaApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3F24474A27E0BC7600009ED6 /* YogaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YogaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F24474D27E0BC7600009ED6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F24474F27E0BC7600009ED6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3F24475127E0BC7600009ED6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F24475427E0BC7600009ED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F24475627E0BC7800009ED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F24475927E0BC7800009ED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F24475B27E0BC7800009ED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F24475E27E0BC7800009ED6 /* YogaApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YogaApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F24476427E0BC7800009ED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3F24476627E0BC7900009ED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F24476C27E0BC7900009ED6 /* YogaApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "YogaApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F24477127E0BC7900009ED6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		3F24477327E0BC7900009ED6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3F24477527E0BC7900009ED6 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3F24477727E0BC7900009ED6 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		3F24477927E0BC7A00009ED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F24477B27E0BC7A00009ED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F24477C27E0BC7A00009ED6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		3F24478A27E0C14C00009ED6 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3F24478C27E0C37400009ED6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F24474727E0BC7600009ED6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F24476927E0BC7900009ED6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F24474127E0BC7600009ED6 = {
+			isa = PBXGroup;
+			children = (
+				3F24474C27E0BC7600009ED6 /* YogaApp */,
+				3F24476227E0BC7800009ED6 /* YogaApp WatchKit App */,
+				3F24477027E0BC7900009ED6 /* YogaApp WatchKit Extension */,
+				3F24474B27E0BC7600009ED6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3F24474B27E0BC7600009ED6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F24474A27E0BC7600009ED6 /* YogaApp.app */,
+				3F24475E27E0BC7800009ED6 /* YogaApp WatchKit App.app */,
+				3F24476C27E0BC7900009ED6 /* YogaApp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F24474C27E0BC7600009ED6 /* YogaApp */ = {
+			isa = PBXGroup;
+			children = (
+				3F24474D27E0BC7600009ED6 /* AppDelegate.swift */,
+				3F24474F27E0BC7600009ED6 /* SceneDelegate.swift */,
+				3F24475127E0BC7600009ED6 /* ViewController.swift */,
+				3F24475327E0BC7600009ED6 /* Main.storyboard */,
+				3F24478A27E0C14C00009ED6 /* TableViewController.swift */,
+				3F24478C27E0C37400009ED6 /* TableViewCell.swift */,
+				3F24475627E0BC7800009ED6 /* Assets.xcassets */,
+				3F24475827E0BC7800009ED6 /* LaunchScreen.storyboard */,
+				3F24475B27E0BC7800009ED6 /* Info.plist */,
+			);
+			path = YogaApp;
+			sourceTree = "<group>";
+		};
+		3F24476227E0BC7800009ED6 /* YogaApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				3F24476327E0BC7800009ED6 /* Interface.storyboard */,
+				3F24476627E0BC7900009ED6 /* Assets.xcassets */,
+			);
+			path = "YogaApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		3F24477027E0BC7900009ED6 /* YogaApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3F24477127E0BC7900009ED6 /* InterfaceController.swift */,
+				3F24477327E0BC7900009ED6 /* ExtensionDelegate.swift */,
+				3F24477527E0BC7900009ED6 /* NotificationController.swift */,
+				3F24477727E0BC7900009ED6 /* ComplicationController.swift */,
+				3F24477927E0BC7A00009ED6 /* Assets.xcassets */,
+				3F24477B27E0BC7A00009ED6 /* Info.plist */,
+				3F24477C27E0BC7A00009ED6 /* PushNotificationPayload.apns */,
+			);
+			path = "YogaApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F24474927E0BC7600009ED6 /* YogaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F24478727E0BC7A00009ED6 /* Build configuration list for PBXNativeTarget "YogaApp" */;
+			buildPhases = (
+				3F24474627E0BC7600009ED6 /* Sources */,
+				3F24474727E0BC7600009ED6 /* Frameworks */,
+				3F24474827E0BC7600009ED6 /* Resources */,
+				3F24478627E0BC7A00009ED6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F24476127E0BC7800009ED6 /* PBXTargetDependency */,
+			);
+			name = YogaApp;
+			productName = YogaApp;
+			productReference = 3F24474A27E0BC7600009ED6 /* YogaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F24475D27E0BC7800009ED6 /* YogaApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F24478327E0BC7A00009ED6 /* Build configuration list for PBXNativeTarget "YogaApp WatchKit App" */;
+			buildPhases = (
+				3F24475C27E0BC7800009ED6 /* Resources */,
+				3F24478227E0BC7A00009ED6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F24476F27E0BC7900009ED6 /* PBXTargetDependency */,
+			);
+			name = "YogaApp WatchKit App";
+			productName = "YogaApp WatchKit App";
+			productReference = 3F24475E27E0BC7800009ED6 /* YogaApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3F24476B27E0BC7900009ED6 /* YogaApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F24477F27E0BC7A00009ED6 /* Build configuration list for PBXNativeTarget "YogaApp WatchKit Extension" */;
+			buildPhases = (
+				3F24476827E0BC7900009ED6 /* Sources */,
+				3F24476927E0BC7900009ED6 /* Frameworks */,
+				3F24476A27E0BC7900009ED6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YogaApp WatchKit Extension";
+			productName = "YogaApp WatchKit Extension";
+			productReference = 3F24476C27E0BC7900009ED6 /* YogaApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F24474227E0BC7600009ED6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					3F24474927E0BC7600009ED6 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					3F24475D27E0BC7800009ED6 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					3F24476B27E0BC7900009ED6 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 3F24474527E0BC7600009ED6 /* Build configuration list for PBXProject "YogaApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F24474127E0BC7600009ED6;
+			productRefGroup = 3F24474B27E0BC7600009ED6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F24474927E0BC7600009ED6 /* YogaApp */,
+				3F24475D27E0BC7800009ED6 /* YogaApp WatchKit App */,
+				3F24476B27E0BC7900009ED6 /* YogaApp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F24474827E0BC7600009ED6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F24475A27E0BC7800009ED6 /* LaunchScreen.storyboard in Resources */,
+				3F24475727E0BC7800009ED6 /* Assets.xcassets in Resources */,
+				3F24475527E0BC7600009ED6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F24475C27E0BC7800009ED6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F24476727E0BC7900009ED6 /* Assets.xcassets in Resources */,
+				3F24476527E0BC7800009ED6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F24476A27E0BC7900009ED6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F24477A27E0BC7A00009ED6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F24474627E0BC7600009ED6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F24478D27E0C37400009ED6 /* TableViewCell.swift in Sources */,
+				3F24475227E0BC7600009ED6 /* ViewController.swift in Sources */,
+				3F24474E27E0BC7600009ED6 /* AppDelegate.swift in Sources */,
+				3F24475027E0BC7600009ED6 /* SceneDelegate.swift in Sources */,
+				3F24478B27E0C14C00009ED6 /* TableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F24476827E0BC7900009ED6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F24477627E0BC7900009ED6 /* NotificationController.swift in Sources */,
+				3F24477827E0BC7900009ED6 /* ComplicationController.swift in Sources */,
+				3F24477427E0BC7900009ED6 /* ExtensionDelegate.swift in Sources */,
+				3F24477227E0BC7900009ED6 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F24476127E0BC7800009ED6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F24475D27E0BC7800009ED6 /* YogaApp WatchKit App */;
+			targetProxy = 3F24476027E0BC7800009ED6 /* PBXContainerItemProxy */;
+		};
+		3F24476F27E0BC7900009ED6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F24476B27E0BC7900009ED6 /* YogaApp WatchKit Extension */;
+			targetProxy = 3F24476E27E0BC7900009ED6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F24475327E0BC7600009ED6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F24475427E0BC7600009ED6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F24475827E0BC7800009ED6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F24475927E0BC7800009ED6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3F24476327E0BC7800009ED6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F24476427E0BC7800009ED6 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F24477D27E0BC7A00009ED6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F24477E27E0BC7A00009ED6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3F24478027E0BC7A00009ED6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "YogaApp WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "YogaApp WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Murygin.YogaApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		3F24478127E0BC7A00009ED6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "YogaApp WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "YogaApp WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Murygin.YogaApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		3F24478427E0BC7A00009ED6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = YogaApp_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "YogaApp WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Murygin.YogaApp;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Murygin.YogaApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		3F24478527E0BC7A00009ED6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = YogaApp_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "YogaApp WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Murygin.YogaApp;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Murygin.YogaApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		3F24478827E0BC7A00009ED6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YogaApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Murygin.YogaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F24478927E0BC7A00009ED6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YogaApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Murygin.YogaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F24474527E0BC7600009ED6 /* Build configuration list for PBXProject "YogaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F24477D27E0BC7A00009ED6 /* Debug */,
+				3F24477E27E0BC7A00009ED6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F24477F27E0BC7A00009ED6 /* Build configuration list for PBXNativeTarget "YogaApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F24478027E0BC7A00009ED6 /* Debug */,
+				3F24478127E0BC7A00009ED6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F24478327E0BC7A00009ED6 /* Build configuration list for PBXNativeTarget "YogaApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F24478427E0BC7A00009ED6 /* Debug */,
+				3F24478527E0BC7A00009ED6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F24478727E0BC7A00009ED6 /* Build configuration list for PBXNativeTarget "YogaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F24478827E0BC7A00009ED6 /* Debug */,
+				3F24478927E0BC7A00009ED6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F24474227E0BC7600009ED6 /* Project object */;
+}
